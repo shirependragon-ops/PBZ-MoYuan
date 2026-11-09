@@ -1,6 +1,4 @@
 .local/
-/项目管理.md
-/CODEX-验证提示词.md
 dist/
 work/
 node_modules/

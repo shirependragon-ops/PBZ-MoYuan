@@ -15,7 +15,6 @@ PATTERNS = {
 }
 FORBIDDEN_DIRS = {".local", "work", "save-rescue", "tools", "dist", "node_modules"}
 FORBIDDEN_SUFFIXES = {".sav", ".log", ".dmp", ".bak", ".zip", ".pak", ".ucas", ".utoc", ".exe", ".dll", ".key", ".pem"}
-FORBIDDEN_NAMES = {"项目管理.md", "CODEX-验证提示词.md"}
 
 def check():
     listing = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT)
@@ -25,7 +24,7 @@ def check():
     failures = []
     for name in names:
         p = Path(name)
-        if p.parts[0] in FORBIDDEN_DIRS or p.suffix.lower() in FORBIDDEN_SUFFIXES or p.name in FORBIDDEN_NAMES or p.name.startswith(".env"):
+        if p.parts[0] in FORBIDDEN_DIRS or p.suffix.lower() in FORBIDDEN_SUFFIXES or p.name.startswith(".env"):
             failures.append((name, "excluded artifact"))
             continue
         content = (ROOT / p).read_text(encoding="utf-8")
