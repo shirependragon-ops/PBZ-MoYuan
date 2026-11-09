@@ -1,0 +1,17 @@
+.local/
+dist/
+work/
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+*.sav
+*.dmp
+*.bak
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store

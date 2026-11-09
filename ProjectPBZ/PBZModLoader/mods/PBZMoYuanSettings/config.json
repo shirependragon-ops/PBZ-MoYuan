@@ -1,0 +1,22 @@
+{
+  "_说明": "修改后保存并重启游戏；百分比直接填写80、60等数字。monsterId可填怪物类ID或完整资产路径。",
+  "replacement": {
+    "enabled": true,
+    "monsterId": "BP_Monster_MoTian_LongZhu_04_C"
+  },
+  "lowHpBuff": {
+    "enabled": true,
+    "damageReduction": {
+      "enabled": true,
+      "maxPercent": 80,
+      "startHpPercent": 100,
+      "fullHpPercent": 0
+    },
+    "damageBonus": {
+      "enabled": true,
+      "maxPercent": 60,
+      "startHpPercent": 100,
+      "fullHpPercent": 0
+    }
+  }
+}
