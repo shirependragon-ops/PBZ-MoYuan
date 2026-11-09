@@ -1,5 +1,5 @@
 "use strict";
-// PBZLowHPBuff v3.13 — 开关、最大效果和血量阈值见共享 config.json。
+// PBZLowHPBuff v3.13.1 — 开关、最大效果和血量阈值见共享 config.json。
 //   * 默认减伤：满血 0%，0 血 80%（线性）
 //   * 默认增伤：满血 0%，0 血 +60%（线性）
 //
@@ -249,7 +249,7 @@ function writeIfChanged(key, pawn, attr, value) {
     }
 }
 
-log("started v3.13-configurable (enabled=" + ENABLED + ", poll " + POLL_MS + " ms)");
+log("started v3.13.1-configurable (enabled=" + ENABLED + ", poll " + POLL_MS + " ms)");
 log("config lowHpBuff=" + JSON.stringify(BUFF));
 for (const warning of SETTINGS.warnings) log("config warning: " + warning);
 if (ENABLED) setInterval(tick, POLL_MS);

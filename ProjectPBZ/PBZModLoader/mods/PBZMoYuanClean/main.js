@@ -1,5 +1,5 @@
 "use strict";
-// PBZMoYuanClean v3.13 — 可配置替换目标，保留源小怪血量与特殊遭遇保护。
+// PBZMoYuanClean v3.13.1 — 可配置替换目标，保留源小怪血量与特殊遭遇保护。
 //
 // v14 修复 v13 的两个问题：
 //   1) Despawn+Respawn 之后 spawner.SpawnedAI 不会刷新（读到的是旧小兵）→ 不再依赖它找新单位
@@ -580,8 +580,8 @@ function tick() {
     }
 }
 
-log("started v3.13-configurable (spawner class rewrite + hp copy + diag log), poll " + POLL_MS + " ms)");
-diagLog("session start v3.13-configurable at " + new Date().toISOString());
+log("started v3.13.1-configurable (spawner class rewrite + hp copy + diag log), poll " + POLL_MS + " ms)");
+diagLog("session start v3.13.1-configurable at " + new Date().toISOString());
 log("config replacement enabled=" + REPLACE_ENABLED + " target=" + TARGET_PATH);
 for (const warning of SETTINGS.warnings) log("config warning: " + warning);
 if (REPLACE_ENABLED) setInterval(tick, POLL_MS);

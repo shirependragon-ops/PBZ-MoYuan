@@ -1,10 +1,10 @@
 {
   "name": "pbz-moyuan",
-  "version": "3.13.0",
+  "version": "3.13.1",
   "private": true,
   "scripts": {
     "test": "node tests/config.cjs && node tests/regression.cjs",
     "build": "python scripts/package.py"
   },
-  "license": "PolyForm-Noncommercial-1.0.0"
+  "license": "SEE LICENSE IN LICENSE"
 }
