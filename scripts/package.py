@@ -9,7 +9,7 @@ VERSION = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))["versi
 DISPLAY_VERSION = VERSION.removesuffix(".0")
 MODS = "ProjectPBZ/PBZModLoader/mods"
 FILES = [
-    "README-install.txt",
+    "README.md",
     "LICENSE",
     "NOTICE",
     f"{MODS}/PBZMoYuanClean/main.js",
@@ -17,7 +17,6 @@ FILES = [
     f"{MODS}/PBZMoYuanSettings/config.json",
     f"{MODS}/PBZMoYuanSettings/settings.js",
     f"{MODS}/PBZMoYuanSettings/monster-ids.json",
-    f"{MODS}/PBZMoYuanSettings/配置说明.md",
 ]
 
 def build():
